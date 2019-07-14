@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity"
+    android:orientation="vertical" >
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#007ad9">
+        <ImageButton
+            android:id="@+id/headBackLink"
+            android:onClick="backHomeClick"
+            android:background="@null"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backarrow" />
+
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Profile"
+            android:textSize="20dp" android:textColor="#fff"/>
+    </androidx.appcompat.widget.Toolbar>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:columnCount="1">
+
+        <ImageView
+            app:srcCompat="@drawable/profile"
+            android:id="@+id/imageView"
+            android:layout_height="210dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Joshua Isaac"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+        <TextView android:text="Track: Android" android:textSize="18dp" android:layout_marginTop="5dp"/>
+        <TextView android:text="Country: Kenya" android:textSize="18dp" android:layout_marginTop="5dp"/>
+        <TextView android:text="Email: jayisaac0@gmail.com" android:textSize="18dp" android:layout_marginTop="5dp"/>
+        <TextView android:text="Phone number: +254770396785" android:textSize="18dp" android:layout_marginTop="5dp"/>
+        <TextView android:text="Slack username: joshua" android:textSize="18dp" android:layout_marginTop="5dp"/>
+
+
+    </GridLayout>
+</LinearLayout>
