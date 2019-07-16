@@ -16,7 +16,7 @@ public class Main2Activity extends AppCompatActivity {
 
 
         WebView myWebView = (WebView) findViewById(R.id.alcChallengeWebView);
-        myWebView.loadUrl("https://andela.com/alc/");
+        myWebView.loadUrl("https://www.google.com/");
     }
 
     public void backHomeClick(View v){
